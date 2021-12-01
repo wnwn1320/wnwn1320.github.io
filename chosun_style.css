@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* whole container inner */
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+/* header */
+header {
+    height: 80px;
+    margin: 14px;
+    
+}
+.header_container {
+    display:flex;
+    flex-flow : row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: solid #dddddd 1px;
+}
+/* small leters on header */
+.nav_head_left,.nav_head_right {
+    font-size: 12px;
+    color: #707070;
+}
+
+/* header center logo */
+.nav_head_center img {
+    width: 265px;
+    height: 54px;
+}
+
+/* header right text */
+.nav_head_right{
+    font-size: 12px;
+}
+.nav_head_right a:hover {
+    text-decoration: underline;
+}
+
+/* top nav bar */
+.top_nav_bar_left {
+    font-size: 24px;
+}
+.top_nav_bar_left #hamburger_icon {
+    padding-right: 10px;
+}
+
+/* main layout */
+.main_layout {
+    display: flex;
+}
