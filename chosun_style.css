@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: left;
+    background: #f6f6f6;
 }
 a {
     text-decoration: none;
@@ -159,4 +160,21 @@ color: #838383;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     padding-bottom: 110px;
+}
+
+/* 측면 뉴스영역 */
+.side_newsarea{
+    height: 100vh;
+}
+.side_title_area {
+    padding-bottom: 20px;
+}
+.side_newsarea_title {
+    float: left;
+    padding-right: 7px;
+}
+.side_newsarea i {
+    font-size: 16px;
+}
+.side_articles {
 }
