@@ -11,6 +11,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+body {
+    background-color: #f7f7f7;
+}
 .clear {
     clear: both;
 }
@@ -87,6 +90,7 @@ header {
     justify-content: space-between;
     margin-right: 10px;
     font-weight: 700;
+    
 }
 .top_nav_bar_center a {
     padding-bottom: 9px;
@@ -166,10 +170,7 @@ color: #838383;
 
 /* 측면 뉴스영역 */
 .side_newsarea{
-    height: 100vh;
-    width: 180px;
-    margin:0 20px 0;
-    position: relative;
+    position: absolute;
 }
 /* 측면 뉴스영역 제목 */
 .side_title_area {
@@ -185,17 +186,30 @@ color: #838383;
 
 /* 측면 뉴스영역 뉴스 */
 .side_wrap {
-    width: 260px;
-    height: 650px;
     position: absolute;
     left:1000px;
+    margin-left: 14px;
 }
+/* 오피니언 제목 아래 영역 */
+/* 뉴스영역 box */
+.side_newsarea {
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    height: 630px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+}
+.side_newsarea .side_article_box:nth-child(-n + 4){
+    margin-bottom:7px;
+    border-bottom: 1px solid #eaeaea;
+}
+/* 개별 뉴스영역 */
 .side_article_box {
-    border-bottom: 1px solid #dddddd;
-    width: 276px;
-    height: 130px;
-    margin-bottom: 10px;
-    
+    height: 20%;
+}
+.side_article_box span{
+    font-size: 18px;
 }
 .side_articles_title {
     color: #707070;
@@ -206,7 +220,6 @@ color: #838383;
     margin-left: 50px;
 }
 .side_article {
-
     font-size: 19px;
     letter-spacing: -2px;
     line-height: 30px;
