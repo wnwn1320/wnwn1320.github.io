@@ -17,9 +17,6 @@ body {
 .clear {
     clear: both;
 }
-.flex {
-    display: flex;
-}
 .float {
     float: left;
 }
@@ -46,28 +43,26 @@ header {
     font-size: 20px;
 }
 .header_container {
-    display:flex;
-    flex-flow : row wrap;
-    justify-content: space-between;
-    align-items: flex-end;
     padding-bottom: 10px;
     border-bottom: solid #dddddd 1px;
 }
 /* small leters on header */
-.nav_head_left,.nav_head_right {
+.nav_head_left, .nav_head_right {
     font-size: 12px;
     color: #707070;
 }
-
+/* left */
+.nav_head_left {
+    padding-top: 40px;
+}
 /* header center logo */
 .nav_head_center img {
     width: 265px;
     height: 54px;
 }
-
 /* header right text */
 .nav_head_right{
-    font-size: 12px;
+    padding-top: 40px;
 }
 .nav_head_right a:hover {
     text-decoration: underline;
@@ -77,40 +72,21 @@ header {
 .top_nav_bar {
     width: 1280px;
     margin: 0 auto;
-    align-items: center;
     height: 34px;
     border-bottom: 2px solid #707070;
-    bottom: -10px;
 }
-.top_nav_bar_left {
-    width: 210px;
+.left_area {
+    font-size: 20px;
 }
-.top_nav_bar_left button:nth-child(1) {
-    margin-right: 15px;
-}
-.top_nav_bar_center {
-    width: 850px;
-    justify-content: space-between;
+.left_area span:nth-child(1){
     margin-right: 10px;
-    font-weight: 700;
-    
 }
-.top_nav_bar_center a {
-    padding-bottom: 9px;
+.center_area a:nth-child(-n+11){
+    margin-right: 10px;
+    font-weight: bold;
 }
-.top_nav_bar_center a:hover {
-    border-bottom: 3px solid #000000;
-}
-.icon_arrow_down {
-    font-size: 10px;
-    margin-left: -20px;
-    line-height: 22px;
-}
-.top_nav_bar_right {
-    flex-direction: row-reverse;
-}
-.top_nav_bar_right button {
-    font-size: 15px;
+.center_area a:last-child {
+    margin-left: -13px;
 }
 /* main layout */
 .news_main_layout  {
@@ -188,7 +164,7 @@ color: #838383;
 .news_title{
     font-size: 21px;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eaeaea;
     width: 100%;
 }
 .thumb_news_title {
@@ -197,16 +173,28 @@ color: #838383;
     width: 100%;
 }
 /* gif 배너 */
-.gif_banner {
+.right_newsarea{
     float: right;
-    width: 20%;
     position: absolute;
-    top: 255px;
-    right: 590px;
+    top: 265px;
+    right: 560px;
 }
-/* 측면 뉴스영역 */
-/* .side_newsarea{
-} */
+.gif_box img{
+    width: 92%;
+}
+/* 메인 작은 뉴스영역 */
+.main_side {
+    width: 370px;
+    margin-top: 10px;
+    border-top: 1px solid #dddddd;
+}
+.right_news_title {
+    font-size: 20px;
+}
+.main_side img {
+    margin-top: 15px;
+    width:90%;
+}
 /* 측면 뉴스영역 제목 */
 .side_title_area {
     padding-bottom: 20px;
